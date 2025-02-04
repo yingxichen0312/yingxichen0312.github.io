@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeepDive Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+</style>
+<body>
+
+ <img src="title.png" alt="title the image" style="position: absolute; top: 50pxc; left: 52%; transform: translateX(-50%); width: 35%; height: auto;">
+
+<!-- Fish behind the sea grass -->
+<div id="aquarium" class="aquarium">
+    <img src="fishone.png" alt="Fish One" class="fish fish-behind draggable">
+        <img src="fishtwo.png" alt="Fish Two" class="fish fish-two draggable">
+        <img src="fishthree.png" alt="Fish Three" class="fish fish-three draggable">
+        <a href="filter4/index.html" target="_blank">
+            <img src="fishfour.png" alt="Fish Four" class="fish fish-four">
+        </a>
+
+        <a href="filter3/index.html" target="_blank">
+        <img src="crustone.png" alt="Crust One" class="crust-one"> 
+        </a>
+        <img src="crusttwo.png" alt="Crust Two" class="crust-two draggable">     
+        <img src="crustthree.png" alt="Crust Three" class="crust-three draggable">
+        
+        
+        <img src="cephone.png" alt="Ceph One" class="ceph-one draggable"> 
+        <img src="cephtwo.png" alt="Ceph Two" class="ceph-two draggable"> 
+        <a href="Filter2/index.html" target="_blank">
+        <img src="cephthree.png" alt="Ceph Three" class="ceph-three"> 
+        </a>
+
+        <a href="Filter1/index.html" target="_blank">
+        <img src="cnidone.png" alt="Cnid One" class="cnid-one"> 
+        </a>
+        <img src="cnidtwo.png" alt="Cnid Two" class="cnid-two draggable"> 
+
+</div>
+
+   
+ <!-- Sea grass on top -->
+ <img src="seagrass.png" class="sea-grass">
+
+ <script src="script.js"></script>
+
+
+ <!-- Music -->
+<audio id="myAudio">
+    <source src="musicone.mp3" type="audio/mpeg">
+</audio>
+
+<button class="play-button" onclick="playAudio()">Play Music</button>
+<button class="pause-button" onclick="pauseAudio()">Pause Music</button>
+
+
+<script>
+    var x = document.getElementById("myAudio"); 
+
+    function playAudio() { 
+        x.play(); 
+    } 
+
+    function pauseAudio() { 
+        x.pause(); 
+    }
+</script>

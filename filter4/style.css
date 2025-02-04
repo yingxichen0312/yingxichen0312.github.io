@@ -1,0 +1,33 @@
+
+
+body {
+ 
+    background-image: url(background.png);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+  
+        background-color: bisque;
+        text-align:center;
+        margin: 80px; 
+        font-family:"Papyrus";
+        font-size: 25px;
+    
+}
+
+.character{
+ top: 20%; 
+left: 20%; 
+  position: absolute;
+  height: 125px;
+  width: 125px;
+  background-image: url('character.png');
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+  transition: left 0.2s ease, top 0.2s ease; 
+  
+
+
+}

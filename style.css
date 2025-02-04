@@ -1,0 +1,190 @@
+
+body {
+    min-height: 100vh;
+    background-image: url('bg1.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aquarium {
+    position:center; 
+    z-index: 1; /* Fish behind the sea grass */
+}
+
+
+.fish {
+    position: absolute;
+    bottom: 50%;
+    animation: swim 10s infinite linear; 
+    
+}
+
+    .fish-behind {
+        top: 50%;
+        left: 72%;
+        width: 350px;
+        animation-duration: 12s; 
+    }
+    
+    .fish-two {
+        top: 20%;
+        left: 60%;
+        width: 300px;
+        animation-duration: 8s;
+    }
+    
+    .fish-three {
+        top: 80%;
+        left: 45%;
+        width: 350px;
+        animation-duration: 10s; 
+         animation-delay: 2s;
+    }
+    .fish-four {
+        top: 5%;
+        left: 10%;
+        width: 300px;
+        animation-duration: 10s; /* Medium speed swim */
+        animation-delay: 0s;
+        transition: transform 0.3s ease; 
+        z-index: 10;
+    }
+    
+    .fish-four:hover {
+        transform: scale(1.1); 
+        cursor: pointer; 
+    }
+   
+   
+
+
+    @keyframes swim {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(60px); /* Adjust based on aquarium size */
+        }
+    }
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    75% {
+        transform: translateX(5px) rotate(5deg);
+    }
+}
+
+
+.sea-grass {
+    width: 100%; 
+    display: block; 
+    opacity: 0.6; 
+    animation: sway 8s infinite ease-in-out; 
+    will-change: transform; 
+    z-index: 1;
+    
+}
+
+.crust-one{
+    position: absolute;
+    top: 103%;
+    left: 75%;
+    width: 300px;
+    z-index: 10;
+    } 
+    .crust-one:hover {
+        transform: scale(1.1); 
+        cursor: pointer; 
+    }
+
+ .crust-two{
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        width: 130px;}
+
+ .crust-three{
+        position: absolute;
+        top: 35%;
+        left: 90%;
+        width: 160px;}
+
+ .ceph-one{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    width: 400px;}
+ .ceph-two{
+        position: absolute;
+        top: 115%;
+        left: 35%;
+        width: 150px;}
+ .ceph-three{
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        width: 250px;
+        z-index: 10;}
+    .ceph-three:hover {
+            transform: scale(1.1); 
+            cursor: pointer; 
+        }
+            
+ .cnid-one{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 289px;
+    z-index: 10;
+    .cnid-one:hover {
+        transform: scale(1.1); 
+        cursor: pointer; 
+    }}
+
+
+ .cnid-two{
+        position: absolute;
+        top: 3%;
+        left: 85%;
+        width: 200px;}
+
+
+
+/* Music Button */
+    
+.play-button, .pause-button {
+    background-color: rgb(183, 218, 204);
+    color: rgb(234, 120, 120);
+    border: none;
+    height: 40px;
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 5px;
+    position: absolute; 
+    transition: top 2s ease-in-out, left 2s ease-in-out; 
+    z-index: 1000; 
+}
+
+.play-button:hover, .pause-button:hover {
+    background-color: rgb(133, 221, 192);
+}
+
+.play-button:active, .pause-button:active {
+    background-color: rgb(189, 189, 244);
+}
+
+
+.draggable {
+    cursor: grab; /* Change cursor to indicate draggability */
+    position: absolute; /* Allow free movement */
+    z-index: 10;
+   
+}
