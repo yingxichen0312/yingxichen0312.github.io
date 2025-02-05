@@ -33,3 +33,19 @@ left: 20%;
 
 
 }
+
+
+.noteone {
+  position: absolute; 
+  top: 80px; 
+  left: 10px; 
+  width: 390px;
+  height: auto; 
+}
+.notetwo{
+  position: absolute;
+  top: 470px; 
+  left: 1150px; 
+  width: 200px; 
+  height: auto; 
+}

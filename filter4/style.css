@@ -20,8 +20,8 @@ body {
  top: 20%; 
 left: 20%; 
   position: absolute;
-  height: 125px;
-  width: 125px;
+  height: 140px;
+  width: 140px;
   background-image: url('character.png');
   background-size: cover;  
   background-position: center;  
@@ -30,4 +30,19 @@ left: 20%;
   
 
 
+}
+
+.noteone {
+  position: absolute; 
+  top: 80px; 
+  left: 10px; 
+  width: 390px;
+  height: auto; 
+}
+.notetwo{
+  position: absolute;
+  top: 470px; 
+  left: 1150px; 
+  width: 250px; 
+  height: auto; 
 }
